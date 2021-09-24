@@ -1,0 +1,35 @@
+h1{ 
+	color:#dd0000;
+	
+}
+body{
+	text-align: center;
+	background: linear-gradient(darkblue, black);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color:black;
+	background-position: center;
+	background-size:cover;
+	color:crimson;
+}
+
+button{ 
+	 
+	padding:10px;
+	width:450px;
+	font-size:16px;
+	
+	background:linear-gradient(to right , skyblue,red);
+	margin:10px;
+}
+.textInput{
+	font-size:16px;
+	color:crimson;
+	height:20px;
+	width:400px;
+	
+}
+p{
+	font-size:14px;
+}
+ 

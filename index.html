@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel = "stylesheet" type = "text/css" href = "style.css"> <!--Linking the html file with the css spreadsheet-->
+<meta charset = "utf-8">
+<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+<title>Website</title>
+</head>
+
+
+<body>
+
+<div id = "addStock"> <!-- Section for adding Stock-->
+	<h1>Add Stock</h1>
+	<p>Which Stock to Add</p>
+	<form id = "productsAdd" ><!-- Form for user to selct which product the want to add-->
+		<input type="radio" name = "addProduct" id = "addProduct_1" value = "product_1" checked>
+		<label for"product_1">Product_1</label>
+		<input type="radio" name = "addProduct" id = "addProduct_2" value = "product_2">
+		<label for"product_2">Product_2</label>
+		<input type="radio" name = "addProduct" id = "addProduct_3" value = "product_3">
+		<label for"product_3">Product_3</label>
+	</form>
+	<p>Amount of Stock Received </p>
+	&nbsp&nbsp <input type = "number" id = "stockAddAmount" class = "textInput" > <!--Input to add an amount of stock of the selected product -->
+
+	<p>Price per stock</p> 
+	R<input type = "number" id = "priceOfStock" class = "textInput" > <!--Input for the price of each stock -->
+	<br>
+
+	<button type = "submit" id = "addStockSubmit">Submit</button> <!--Button to submit the information -->
+</div>
+
+ <hr> <!--Horizontal line for neatness-->
+ 
+ 
+<div id = "removeStock"> <!--Section for removing stock -->
+	<h1>Remove Stock</h1>
+	<p>Which Stock to Remove</p>
+	<form id = "productsRemove" ><!-- Form for user to selct which product the want to remove-->
+		<input type="radio" name = "removeProduct" id = "removeProduct_1" value = "product_1" checked>
+		<label for"product_1">Product_1</label>
+		<input type="radio" name = "removeProduct" id = "removeProduct_2" value = "product_2">
+		<label for"product_2">Product_2</label>
+		<input type="radio" name = "removeProduct" id = "removeProduct_3" value = "product_3">
+		<label for"product_3">Product_3</label>
+	</form>
+  
+	<p>Email Address</p>
+	<input type = "text" id = "removeEmail" class = "textInput" > <!-- Input for receiving the email address of the customer-->
+	
+	<p>Amount of Stock Sold</p>
+	<input type = "number" id = "stockRemoveAmount" class = "textInput" > <!--Input to remove an amount of stock of the selected product -->
+
+	<br>
+	<button type = "submit" id = "removeStockSubmit">Submit</button>  <!--Button to submit the information -->
+</div>
+
+<hr>
+
+<div id = "stockAverage"><!--Section showing the amount of stock left of each product and the amount of stock left for each product-->
+	<h1>Stock Average</h1>
+
+
+	<h3>Product_1</h3>
+	<p id = "product_1Price">Average Price: R 0</p>  <!--Average price of product 1-->
+	<p id = "product_1Stock">Left in Stock: 0</p>    <!--Amount of stock left for product 1-->
+	
+	<h3>Product_2</h3>
+	<p id = "product_2Price">Average Price: R 0</p>  <!--Average price of product 2-->
+	<p id = "product_2Stock">Left in Stock: 0</p>    <!--Amount of stock left for product 2-->
+	
+	<h3>Product_3</h3>
+	<p id = "product_3Price">Average Price: R 0</p>  <!--Average price of product 3-->
+	<p id = "product_3Stock">Left in Stock: 0</p>    <!--Amount of stock left for product 3-->
+	
+</div>
+
+
+
+
+
+
+
+
+<hr>
+<script src = "code.js"></script> <!--Script tag to link html file with javascript file-->
+</body>
+</html>
